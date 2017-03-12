@@ -63,15 +63,17 @@
          
 
             var animalimage = $("<img>");
+            // var p = $("<p>").text("Rating:" + results[i].rating);
+
             animalimage.addClass("gif");
             animalimage.attr("src", results[i].images.fixed_height_still.url);
             animalimage.attr("data-animate", results[i].images.fixed_height.url);
             animalimage.attr("data-still", results[i].images.fixed_height_still.url);
             animalimage.attr("data-state", "still" );
-            
-            gifDiv.prepend(animalimage);
-
-            $("#imageSection").prepend(gifDiv);
+           
+            gifDiv.append(animalimage);
+           // gifDiv.append(p);
+             $("#imageSection").prepend(gifDiv);
           }
         });
          
