@@ -34,7 +34,9 @@
     </div>
      <div  class="col-md-8" id="imageSection"></div>
 </div>
-    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Heroku is served over https (you can think of that as standing for http secure) so it won't allow you to request resources over plain old http. -->
+    <!-- In the case of the jQuery library, you can simply add an `s` to the protocol below -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
    <script type="text/javascript" src="assets/javascript/logic.js"></script>
   </div>
 </body>
